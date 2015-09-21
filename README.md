@@ -1,8 +1,14 @@
 # ExData_Plotting_NEI
-You must address the following questions and tasks in your exploratory analysis. 
-For each question/task you will need to make a single plot. Unless specified, you can use any plotting system in R to make your plot.
+The data for this assignment can be downloaded using the following code
 
-* Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? 
+fileURL <- 'https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip' 
+download.file(fileURL, destfile = './NEI.zip') 
+unzip('NEI.zip')
+
+Using the data identified above, the following questions/tasks will be answered.
+
+##plot1.R
+Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? 
 Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.
 
 * Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008? 
