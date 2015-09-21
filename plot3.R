@@ -20,7 +20,7 @@ png(filename="./plot3.png",width=480,height=480,units="px")
 
 #Plot the data
 p <- qplot(year,TotalEmissions,data=BC.Emissions.Year,color=BC.Emissions.Year$type)
-p + geom_line() + xlab("Year") + ylab("Total Emissions") + 
+p + geom_line() + xlab("Year") + ylab("Total PM2.5 Emitted (tons)") + 
         ggtitle("Total Emissions in Baltimore City by Year and Type") +
         scale_color_discrete(name="Type")
 

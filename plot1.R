@@ -17,7 +17,7 @@ NEI.Emissions.Year <- NEI %>% group_by(year) %>% summarize(TotalEmissions=sum(Em
 png(filename="./plot1.png",width=480,height=480,units="px")
 
 #Plot the data
-with(NEI.Emissions.Year,plot(year,TotalEmissions,xlab='Year',ylab='Total Emissions'))
+with(NEI.Emissions.Year,plot(year,TotalEmissions,xlab='Year',ylab='Total PM2.5 Emitted (tons)'))
 with(NEI.Emissions.Year, points(year, TotalEmissions, pch = 19))
 with(NEI.Emissions.Year, lines(year, TotalEmissions, type='l'))
 title(main='Total PM2.5 Emissions From All Sources by Year')

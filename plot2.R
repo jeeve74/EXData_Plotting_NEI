@@ -18,7 +18,7 @@ BC.Emissions.Year <- BC %>% group_by(year) %>% summarize(TotalEmissions=sum(Emis
 png(filename="./plot2.png",width=480,height=480,units="px")
 
 #Plot the data
-with(BC.Emissions.Year,plot(year,TotalEmissions,xlab='Year',ylab='Total Emissions'))
+with(BC.Emissions.Year,plot(year,TotalEmissions,xlab='Year',ylab='Total PM2.5 Emitted (tons)'))
 with(BC.Emissions.Year, points(year, TotalEmissions, pch = 19))
 with(BC.Emissions.Year, lines(year, TotalEmissions, type='l'))
 title(main='Total PM2.5 Emissions From All Sources \nin Baltimore City, Maryland by Year')
