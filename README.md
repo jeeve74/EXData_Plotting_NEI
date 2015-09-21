@@ -7,16 +7,22 @@ unzip('NEI.zip')
 
 Using the data identified above, the following questions/tasks will be answered.
 
-##plot1.R
-Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? 
+###plot1.R
+Q: Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? 
+A: Yes
 Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.
 
-* Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008? 
+##plot2.R
+Q: Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008? 
+A: Yes, but there was a spike in 2005
 Use the base plotting system to make a plot answering this question.
 
-* Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, 
+##plot3.R
+Q: Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, 
 which of these four sources have seen decreases in emissions from 1999–2008 for Baltimore City? 
-Which have seen increases in emissions from 1999–2008? 
+A: 
+Q: Which have seen increases in emissions from 1999–2008? 
+A:
 Use the ggplot2 plotting system to make a plot answer this question.
 
 * Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?
