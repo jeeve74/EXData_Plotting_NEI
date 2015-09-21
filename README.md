@@ -7,7 +7,7 @@ unzip('NEI.zip')
 
 The following questions/tasks have been answered using the above data sources.
 
-###plot1.R
+##lot1.R
 Q: Have total emissions from PM2.5 decreased in the United States from 1999 to 2008?  
 A: Yes  
 Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.
