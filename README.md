@@ -20,12 +20,14 @@ Use the base plotting system to make a plot answering this question.
 ##plot3.R
 Q: Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, 
 which of these four sources have seen decreases in emissions from 1999–2008 for Baltimore City?  
-A:   
+A: Non-Road, Nonpoint, and On-Road have all seen decreases in emissions.  
 Q: Which have seen increases in emissions from 1999–2008?  
-A:  
+A: Only Point is higher in 2008 than it was in 1999.  
 Use the ggplot2 plotting system to make a plot answer this question.
 
-* Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?
+##plot4.R
+Q: Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?  
+A:  
 
 * How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?
 
