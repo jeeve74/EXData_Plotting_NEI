@@ -24,7 +24,7 @@ Cities.Vehicle <- merge(Cities, SCC.Vehicle, by = 'SCC')
 Cities.Vehicle.Year <- Cities.Vehicle %>% group_by(year,fips) %>% summarize(TotalEmissions=sum(Emissions)) 
 
 ## Create City/fips data frame
-City <- rbind.data.frame(c("Baltimore City","24510" ),c("Los Angeles","06037"))
+City <- rbind.data.frame(c("Baltimore City","24510" ),c("Los Angeles County","06037"))
 names(City) <- c("City","fips")
 
 ## Merge City with summarized data
@@ -35,7 +35,7 @@ png(filename="./plot6.png",width=480,height=480,units="px")
 
 #Plot the data
 g <- ggplot(data=City.Vehicle.Year, aes(x=year,y=TotalEmissions))
-g + geom_point(aes(color=City)) + geom_line(aes(color=City)) +
+g + geom_point() + facet_grid(. ~ City) + geom_smooth(method = "lm") +
         labs(x="Year") + labs(y="Total PM2.5 Emitted (tons)") + 
         labs(title="Total Emissions in Baltimore City \nby Year and City") + 
         scale_color_discrete(name="City")
