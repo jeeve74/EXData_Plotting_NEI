@@ -6,7 +6,7 @@ download.file(fileURL, destfile = './NEI.zip')
 unzip('NEI.zip')
 
 ## R Code and Image Files
-Each question has an associated code and image file to address answering the below questions.
+For each question below, see its associated code and image file.
 
 1. Have total emissions from PM2.5 decreased in the United States from 1999 to 2008?  
 Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.
