@@ -5,32 +5,23 @@ fileURL <- 'https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip'
 download.file(fileURL, destfile = './NEI.zip') 
 unzip('NEI.zip')
 
-The following questions/tasks have been answered using the above data sources.
+## R Code and Image Files
+Each question has an associated code and image file to address answering the below questions.
 
-##plot1.R
-Q: Have total emissions from PM2.5 decreased in the United States from 1999 to 2008?  
-A: Yes  
+1. Have total emissions from PM2.5 decreased in the United States from 1999 to 2008?  
 Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.
 
-##plot2.R
-Q: Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008?  
-A: Yes, but there was a spike in 2005  
+2. Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008?  
 Use the base plotting system to make a plot answering this question.
 
-##plot3.R
-Q: Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, 
-which of these four sources have seen decreases in emissions from 1999–2008 for Baltimore City?  
-A: Non-Road, Nonpoint, and On-Road have all seen decreases in emissions.  
-Q: Which have seen increases in emissions from 1999–2008?  
-A: Only Point is higher in 2008 than it was in 1999.  
+3. Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen 
+decreases in emissions from 1999–2008 for Baltimore City?  
+Which have seen increases in emissions from 1999–2008?  
 Use the ggplot2 plotting system to make a plot answer this question.
 
-##plot4.R
-Q: Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?  
-A:  
+4. Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?  
 
-* How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?
+5. How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?  
 
-* Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, 
-California (fips == "06037"). 
-Which city has seen greater changes over time in motor vehicle emissions?
+6. Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California (fips == "06037").  
+Which city has seen greater changes over time in motor vehicle emissions? 

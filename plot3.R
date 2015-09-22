@@ -19,9 +19,10 @@ BC.Emissions.Year <- BC %>% group_by(year,type) %>% summarize(TotalEmissions=sum
 png(filename="./plot3.png",width=480,height=480,units="px")
 
 #Plot the data
-p <- qplot(year,TotalEmissions,data=BC.Emissions.Year,color=BC.Emissions.Year$type)
-p + geom_line() + xlab("Year") + ylab("Total PM2.5 Emitted (tons)") + 
-        ggtitle("Total Emissions in Baltimore City by Year and Type") +
+g <- ggplot(data=BC.Emissions.Year, aes(x=year,y=TotalEmissions))
+g + geom_point(aes(color=type)) + geom_line(aes(color=type)) +
+        labs(x="Year") + labs(y="Total PM2.5 Emitted (tons)") + 
+        labs(title="Total Emissions in Baltimore City \nby Year and Type") + 
         scale_color_discrete(name="Type")
 
 ## clean up the memory and close off the graphic device
