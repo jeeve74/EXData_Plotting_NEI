@@ -20,10 +20,9 @@ png(filename="./plot3.png",width=480,height=480,units="px")
 
 #Plot the data
 g <- ggplot(data=BC.Emissions.Year, aes(x=year,y=TotalEmissions))
-g + geom_point(aes(color=type)) + geom_line(aes(color=type)) +
+g + geom_point() + facet_wrap(~type) + geom_smooth(method = "lm") +
         labs(x="Year") + labs(y="Total PM2.5 Emitted (tons)") + 
-        labs(title="Total Emissions in Baltimore City \nby Year and Type") + 
-        scale_color_discrete(name="Type")
+        labs(title="Total Emissions in Baltimore City \nby Year and Type") 
 
 ## clean up the memory and close off the graphic device
 bb <- rm(list=ls())
